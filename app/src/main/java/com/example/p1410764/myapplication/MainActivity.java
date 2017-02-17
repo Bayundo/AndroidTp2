@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     EditText mail;
     EditText tel;
     RadioButton sex;
+    EditText postal;
     String message;
 
     @Override
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         mail = (EditText) findViewById(R.id.editText4) ;
         tel = (EditText) findViewById(R.id.editText5) ;
         sex = (RadioButton) findViewById(R.id.radioMale) ;
+        postal = (EditText) findViewById(R.id.editText6);
 
 
 
@@ -48,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 message += " date : " + date.getText()+"\n";
                 message += " mail : " + mail.getText()+"\n";
                 message += " tel : " + tel.getText()+"\n";
-
+                message += " Adresse : " + postal.getText()+"\n";
                 if(sex.isChecked()){
                     message += " sex : Homme \n";
                 }
